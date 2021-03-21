@@ -38,6 +38,6 @@ QUnit.module('volume', function() {
 
 QUnit.module('sqrt_not_nulll', function() {
   QUnit.test('Square root of a number not zero !', function(assert) {
-    assert.notEqual(sqrt_not_nulll(16), 0, '√16 = 0');
+    assert.notEqual(sqrt_not_nulll(16), 0, '√16 != 0');
   });
 });
