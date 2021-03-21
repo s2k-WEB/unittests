@@ -43,7 +43,7 @@ QUnit.module('sqrt_not_nulll', function() {
 });
 
 QUnit.module('mul_4_numbs', function() {
-  QUnit.test('Square root of a number not zero !', function(assert) {
+  QUnit.test('Multiplication of four numbers is not null !', function(assert) {
     assert.notEqual(mul_4_numbs(5,7,8,9), 0, '5 * 7 * 8 * 9 != 0');
   });
 });
