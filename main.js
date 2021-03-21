@@ -3,6 +3,8 @@ const gmean = (a, b) => Math.sqrt(a * b).toFixed(1);
 const hypotenuse = (a, b) => Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)).toFixed(1);
 const surface = (a,b,c) => 2*(a * b + a * c + b * c );
 const volume = (a,b,c) => a * b *c;
+const sqrt_not_nulll = (a) => Math.sqrt(a);
+
 
 QUnit.module('amean', function() {
     QUnit.test('Should calculate arithmetic mean.', function(assert) {
@@ -31,5 +33,11 @@ QUnit.module('surface', function() {
 QUnit.module('volume', function() {
   QUnit.test('Should calculate the volume of brick body.', function(assert) {
     assert.equal(volume(6, 2, 7), 84, '6 * 2 * 7 = 84');
+  });
+});
+
+QUnit.module('sqrt_not_nulll', function() {
+  QUnit.test('Square root of a number not zero !', function(assert) {
+    assert.notEqual(sqrt_not_nulll(16), 0, '√16 = 0');
   });
 });
